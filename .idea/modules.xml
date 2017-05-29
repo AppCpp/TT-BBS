@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/TT-BBS.iml" filepath="$PROJECT_DIR$/.idea/TT-BBS.iml" />
+      <module fileurl="file://D:\wamp\www\TT-BBS\.idea\mybbs.iml" filepath="D:\wamp\www\TT-BBS\.idea\mybbs.iml" />
+    </modules>
+  </component>
+</project>
