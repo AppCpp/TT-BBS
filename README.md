@@ -8,5 +8,5 @@
 
 后面有时间再加上ajax，帖子、评论分页以及更好的权限控制。
 
-又需要可以访问[CI的官网](http://codeigniter.org.cn/user_guide/)，祝愿大家pull码快乐！！！
+有需要可以访问[CI的官网](http://codeigniter.org.cn/user_guide/)，祝愿大家Clone码快乐！！！
 
