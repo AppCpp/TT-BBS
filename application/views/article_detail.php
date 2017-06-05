@@ -99,6 +99,14 @@
     </div>
 </div>
 <?php } ?>
+    <!--分页-->
+    <div class="page-header position-relative">
+        <ul class="pagination" style="padding: 15px;margin-top: 0px;position:absolute;left: 40%">
+            <li><a >&laquo;</a></li>
+            <li class="active"><a>1</a></li>
+            <li><a>&raquo;</a></li>
+        </ul>
+    </div>
 </div>
 <?php $this->load->view('common/add_comment');?>
 <?php $this->load->view('common/add_article');?>

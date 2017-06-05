@@ -31,7 +31,7 @@ class admin_controller extends base_controller{
             return;
         }
         if($this->isAdmin()===true){
-            $this->load->view('admin/home');
+            $this->load->view('admin/home',array('page'=>'index'));
         }else{
             redirect('home_controller/index');
         }
@@ -43,7 +43,7 @@ class admin_controller extends base_controller{
     public function article(){
 
         $article_array=$this->article_model->get_all_article();
-        $this->load->view('admin/article',array('arts'=>$article_array));
+        $this->load->view('admin/article',array('arts'=>$article_array,'page'=>'article'));
 
     }
 
@@ -95,6 +95,7 @@ class admin_controller extends base_controller{
         //获取所有的admin
         $admin_array=$this->role_model->get_all_admin('admin');
         $data['admin_array']=$admin_array;
+        $data['page']='user';
 
         $this->load->view('admin/user',$data);
     }
@@ -157,7 +158,7 @@ class admin_controller extends base_controller{
      */
     public function role_list(){
         $role_array=$this->role_model->get_all_role();
-        $this->load->view('admin/role',array('roles'=>$role_array));
+        $this->load->view('admin/role',array('roles'=>$role_array,'page'=>'role'));
 
     }
     /*
@@ -187,7 +188,7 @@ class admin_controller extends base_controller{
 
         $records=$this->delrecord_model->get_all_record();
 
-        $this->load->view('admin/del_article_record',array('records'=>$records));
+        $this->load->view('admin/del_article_record',array('records'=>$records,'page'=>'record'));
     }
 
 
