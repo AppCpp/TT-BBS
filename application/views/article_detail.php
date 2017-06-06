@@ -33,14 +33,26 @@
 <?php $this->load->view('common/header');?>
 <div style="position: fixed;bottom: 50%;right: 0%;height: 10%;width: 14%">
     <b>
-        <!--<a class="btn btn-success btn-lg tiezi" href="<?php /*echo site_url('article_controller/add_comment'); */?>?article+id=<?php /*echo $article_datail['0']->article_id; */?>">发表评论</a>-->
-        <a class="btn btn-success btn-lg tiezi" target="_blank" data-toggle="modal" data-target="#myModal">发表评论</a>
+        <!--<a class="btn btn-success btn-lg tiezi" target="_blank" data-toggle="modal" data-target="#myModal">发表评论</a>-->
+        <?php
+        if($this->session->userdata('user')===null){ ?>
+
+            <a class="btn btn-success btn-lg tiezi"  href="<?php echo site_url('user_controller/index');?>">发表评论</a>
+        <?php }else{ ?>
+            <a class="btn btn-success btn-lg tiezi" target="_blank" data-toggle="modal" data-target="#myModal">发表评论</a>
+        <?php } ?>
     </b>
 </div>
 
 <div style="position: fixed;bottom: 20%;right: 0%;height: 10%;width: 10%">
     <b>
-        <a class="btn btn-info btn-lg tiezi" target="_blank" data-toggle="modal" data-target="#articleModal">发帖</a>
+        <?php
+        if($this->session->userdata('user')===null){ ?>
+
+            <a class="btn btn-info btn-lg tiezi"  href="<?php echo site_url('user_controller/index');?>">发帖</a>
+        <?php }else{ ?>
+            <a class="btn btn-info btn-lg tiezi" target="_blank" data-toggle="modal" data-target="#articleModal">发帖</a>
+        <?php } ?>
     </b>
 </div>
 

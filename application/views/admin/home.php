@@ -63,7 +63,7 @@
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                     <div class="div-square">
-                        <a href="<?php echo site_url('admin_controller/article  ')?>" >
+                        <a href="<?php echo site_url('admin_controller/article')?>" >
                             <i class="fa fa-table fa-5x"></i>
                             <h4>帖子管理</h4>
                         </a>

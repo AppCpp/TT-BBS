@@ -21,12 +21,26 @@ class article_model extends CI_Model {
         return $this->db->get('article')->result();
     }
 
-    /*
-     * 根据帖子的审核 和 未审核的状态获取相对于的帖子
+    /**根据帖子的审核 和 未审核的状态获取相对于的帖子
+     * @param $status
+     * @param $page
+     * @param $prePage
+     * @return mixed
      */
-    public function article_by_status($status){
+    public function article_by_status($status,$page,$prePage){
+        $page=$page-1;
+        $page=$page*$prePage;
         $this->db->where('shenhe',$status);
+        $this->db->limit($prePage,$page);
         return $this->db->get('article')->result();
+    }
+
+    /*
+     * 获取审核的帖子的数量
+     */
+    public function get_page_count(){
+        $this->db->where('shenhe','1');
+        return $this->db->count_all_results('article');
     }
 
     /*

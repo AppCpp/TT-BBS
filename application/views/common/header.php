@@ -1,23 +1,4 @@
-<!--<ul id="nav">
-    <li><a href="<?php /*echo site_url('home_controller/index')*/?>" style="font-size: 20px; text-decoration:none;"><?php /*echo $site_name;*/?></a></li>
-    <li><a href="<?php /*echo site_url('home_controller/index')*/?>" style="text-decoration:none"><?php /*echo $site_home;*/?></a></li>
-    <li><a href="<?php /*echo site_url('article_controller/myarticle').'?user_id='.$this->session->userdata('user')['0']['user_id'];*/?>" style="text-decoration:none">我的文章</a></li>
-    <li><a href="<?php /*echo site_url('user_controller/info').'?user_id='.$this->session->userdata('user')['0']['user_id'];*/?>" style="text-decoration:none">个人中心</a></li>
-    <?php
-/*        if($this->session->userdata('user')!=NULL){*/?>
-            <li><a href="<?php /*echo site_url('user_controller/info');*/?>?user_id=<?php /*echo $this->session->userdata('user')['0']['user_id'];*/?>" style="text-decoration:none;background-color:#6d95a5"><?php /*echo $this->session->userdata('user')['0']['name'];*/?></a></li>
-            <li><a href="<?php /*echo site_url('user_controller/loginout');*/?>" style="text-decoration:none">退出</a></li>
 
-            <?php /*if(isAdmin()===true) {*/?>
-            <li><a href="<?php /*echo site_url('admin_controller/index');*/?>?user_id=<?php /*echo $this->session->userdata('user')['0']['user_id'];*/?>" style="text-decoration:none">后台管理</a></li>
-            <?php /*}*/?>
-            <?php
-/*        }else{*/?>
-            <li><a href="<?php /*echo site_url('user_controller/index');*/?>" style="text-decoration:none">登录</a></li>
-        <?php
-/*        } */?>
-</ul>
--->
 <div style="align-content: center;width: 80%;margin-left: 10%;border-radius:15px ">
     <ul class="nav nav-pills nav-justified" style="background-color:#91baff;border-radius:5px">
         <li class="active"><a href="<?php echo site_url('home_controller/index')?>"><?php echo $site_name;?></a></li>
