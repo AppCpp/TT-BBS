@@ -1,26 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7867809-f621-4a33-96ed-5b494e7ccada" name="Default" comment="后台界面优化">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/phpspec.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TT-BBS.iml" afterPath="$PROJECT_DIR$/.idea/TT-BBS.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="b7867809-f621-4a33-96ed-5b494e7ccada" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/home_controller.php" afterPath="$PROJECT_DIR$/application/controllers/home_controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/article_model.php" afterPath="$PROJECT_DIR$/application/models/article_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/home.php" afterPath="$PROJECT_DIR$/application/views/admin/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/article_detail.php" afterPath="$PROJECT_DIR$/application/views/article_detail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/common/header.php" afterPath="$PROJECT_DIR$/application/views/common/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home.php" afterPath="$PROJECT_DIR$/application/views/home.php" />
     </list>
-    <manually-removed-from-ignored>
-      <directory path=".idea/" />
-    </manually-removed-from-ignored>
+    <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -448,7 +432,7 @@
       <workItem from="1496644748019" duration="6524000" />
       <workItem from="1496668756754" duration="318000" />
       <workItem from="1496669159433" duration="244000" />
-      <workItem from="1496762354281" duration="7655000" />
+      <workItem from="1496762354281" duration="7708000" />
     </task>
     <task id="LOCAL-00001" summary="后台界面优化">
       <created>1496667808619</created>
@@ -457,11 +441,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496667808619</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="前台帖子分页">
+      <created>1496770538442</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1496770538442</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17056000" />
+    <option name="totallyTimeSpent" value="17109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -495,7 +486,8 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <MESSAGE value="后台界面优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="后台界面优化" />
+    <MESSAGE value="前台帖子分页" />
+    <option name="LAST_COMMIT_MESSAGE" value="前台帖子分页" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
