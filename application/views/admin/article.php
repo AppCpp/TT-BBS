@@ -76,9 +76,9 @@ role.php<?php
                                 <td style="width: auto">
                                     <?php
                                     if($art->shenhe==='1'){?>
-                                        <a class="btn btn-xs btn-success" href="<?php echo site_url('admin_controller/cancel_shenhe')?>?article_id=<?php echo $art->article_id; ?>" >√</a>
+                                        <a class="btn btn-xs btn-success" id="shenhe<?php echo $i++;?>" <!--onclick="check('<?php /*echo $art->article_id; */?>',1,'<?php /*echo $i; */?>')"--> href="<?php echo site_url('admin_controller/cancel_shenhe')?>?article_id=<?php echo $art->article_id; ?>" >√</a>
                                     <?php }else{ ?>
-                                        <a class="btn btn-xs btn-danger" href="<?php echo site_url('admin_controller/shenhe')?>?article_id=<?php echo $art->article_id; ?>">×</a>
+                                        <a class="btn btn-xs btn-danger" id="shenhe<?php echo $i++;?>" href="<?php echo site_url('admin_controller/shenhe')?>?article_id=<?php echo $art->article_id; ?>">×</a>
                                  <?php   } ?>
                                 </td>
                                 <td style="width: auto">
@@ -100,7 +100,7 @@ role.php<?php
 <div class="footer">
     <div class="row">
         <div class="col-lg-12" >
-            &copy; Clan
+            &copy Clan
         </div>
     </div>
 </div>
@@ -115,6 +115,39 @@ role.php<?php
 <!-- CUSTOM SCRIPTS -->
 <script src="<?php echo base_url('static/common/js/custom.js')?>"></script>
 
+<script>
+    function check(id,type,aid) {
+        var URL;
+        var val=$("shenhe"+aid).val();
+        if(val=="√"){
+            type=1;
+        }else{
+            type=0;
+        }
+        if(type==1){
+            URL='<?php echo site_url('admin_controller/cancel_shenhe')?>';
+        }else{
+            URL='<?php echo site_url('admin_controller/shenhe')?>'
+        }
+        $.ajax(function () {
+                type:"GET",
+                url:URL,
+                data:{"article_id":id},
+                datatype:"json",
+                success:function (data) {
+                    if(type==1){
+                        $("shenhe"+aid).attr("class","btn btn-xs btn-danger");
+                        $("shenhe"+aid).val("×");
+                    }else{
+                        $("shenhe"+aid).attr("class","btn btn-xs btn-success");
+                        $("shenhe"+aid).val("√");
+                    }
+            }
+        });
+
+    }
+
+</script>
 
 </body>
 </html>
