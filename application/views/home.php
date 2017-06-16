@@ -75,11 +75,11 @@
 <!--分页-->
 <div class="page-header position-relative">
     <ul class="pagination" style="padding: 15px;margin-top: 0px;position:absolute;left: 40%">
-        <li class="<?php if($currentPage==='1') echo 'active';?>"><a  href="<?php echo site_url('home_controller/index');?>?page=1">&laquo;</a></li>
+        <li <?php if($currentPage==='1') echo 'class="active"';?>><a  href="<?php echo site_url('home_controller/index');?>?page=1">&laquo;</a></li>
         <?php for($index=1;$index<$pageCount+1;$index++){?>
-        <li class="<?php if($currentPage===strval($index)) echo 'active';?>"><a href="<?php echo site_url('home_controller/index');?>?page=<?php echo $index;?>"><?php echo $index;?></a></li>
+        <li <?php if($currentPage===strval($index)) echo 'class="active"';?>><a href="<?php echo site_url('home_controller/index');?>?page=<?php echo $index;?>"><?php echo $index;?></a></li>
         <?php } ?>
-        <li class="<?php if($currentPage===strval($pageCount)) echo 'active';?>"><a href="<?php echo site_url('home_controller/index');?>?page=<?php echo $pageCount;?>">&raquo;</a></li>
+        <li <?php if($currentPage===strval($pageCount)) echo 'class="active"';?>><a href="<?php echo site_url('home_controller/index');?>?page=<?php echo $pageCount;?>">&raquo;</a></li>
     </ul>
 </div>
 

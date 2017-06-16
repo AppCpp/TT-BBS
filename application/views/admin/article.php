@@ -76,7 +76,7 @@ role.php<?php
                                 <td style="width: auto">
                                     <?php
                                     if($art->shenhe==='1'){?>
-                                        <a class="btn btn-xs btn-success" id="shenhe<?php echo $i++;?>" <!--onclick="check('<?php /*echo $art->article_id; */?>',1,'<?php /*echo $i; */?>')"--> href="<?php echo site_url('admin_controller/cancel_shenhe')?>?article_id=<?php echo $art->article_id; ?>" >√</a>
+                                        <a class="btn btn-xs btn-success" id="shenhe<?php echo $i++;?>" href="<?php echo site_url('admin_controller/cancel_shenhe')?>?article_id=<?php echo $art->article_id; ?>" >√</a>
                                     <?php }else{ ?>
                                         <a class="btn btn-xs btn-danger" id="shenhe<?php echo $i++;?>" href="<?php echo site_url('admin_controller/shenhe')?>?article_id=<?php echo $art->article_id; ?>">×</a>
                                  <?php   } ?>
@@ -117,7 +117,7 @@ role.php<?php
 
 <script>
     function check(id,type,aid) {
-        var URL;
+        var u;
         var val=$("shenhe"+aid).val();
         if(val=="√"){
             type=1;
@@ -125,13 +125,13 @@ role.php<?php
             type=0;
         }
         if(type==1){
-            URL='<?php echo site_url('admin_controller/cancel_shenhe')?>';
+            u="<?php echo site_url('admin_controller/cancel_shenhe')?>";
         }else{
-            URL='<?php echo site_url('admin_controller/shenhe')?>'
+            u="<?php echo site_url('admin_controller/shenhe')?>";
         }
         $.ajax(function () {
                 type:"GET",
-                url:URL,
+                url:u,
                 data:{"article_id":id},
                 datatype:"json",
                 success:function (data) {

@@ -19,7 +19,7 @@
 <div style="height: 100%;">
     <center>
         <form class="bs-example bs-example-form" role="form" id="regform" method="post" action="<?php echo site_url('user_controller/update')?>" style="margin-top: 0;">
-            <img src="<?php echo base_url('static/images/touxiang.jpg');?>" style="width: 150px;height: 150px;margin-bottom: 30px;background-color: #9399a2">
+            <img src="<?php echo base_url('static/common/images/touxiang.jpg');?>" style="width: 150px;height: 150px;margin-bottom: 30px;background-color: #9399a2">
 
             <div class="input-group">
                 <span id="namesp" style="color:red"></span><br>
